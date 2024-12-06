@@ -29,7 +29,8 @@ jobs:
           echo "Este es el valor de platform: ${{ env.platform}}"
           echo "Este es el valor de region: ${{ env.region}}"
           echo "Este es el valor de Account: ${{ env.account}}"
-          echo "Este es el valor de Account: ${{ env.username}}"
+          echo "Este es el valor de USERNAME SECRET: ${{ env.username}}"
+          echo "Este es el valor de project version variable: ${{ vars.PROJECT_VERSION}}"
 
       - name: "mostrando valores solo si hay contenido en secret"
         if: ${{env.username != ''}}
