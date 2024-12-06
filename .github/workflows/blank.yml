@@ -15,7 +15,7 @@ jobs:
       region: us-east-1
       account: example
 
-      username: ${{secrets.GITHUB_TOKEN}}
+      username: ${{secrets.GITHUB_TOKEN.secrets}}
 
     runs-on: ubuntu-latest
 
